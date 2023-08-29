@@ -51,7 +51,7 @@ function sprite() {
 function images() {
   return src(['app/images/src/*.*', '!app/images/src/*.svg'])
     .pipe(newer('app/images'))
-    .pipe(avif({quality : 50}))
+    .pipe(avif({quality : 100}))
 
     .pipe(src('app/images/src/*.*'))
     .pipe(newer('app/images'))
@@ -85,10 +85,11 @@ function styles() {
 
 function watching() {
   browserSync.init({
-        server: {
-            baseDir: "app/"
-        }
-    });
+    server: {
+      baseDir: "app/",
+    },
+    browser: "firefox",
+  });
   watch(['app/scss/style.scss'], styles)
   watch(['app/images/src'], images)
   watch(['app/js/main.js'], scripts)

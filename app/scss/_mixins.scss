@@ -1,0 +1,149 @@
+@mixin space-mono {
+  color: $fcolor;
+  font-family: 'Space Mono', monospace;
+  font-style: normal;
+}
+@mixin work-sans {
+  color: $fcolor;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+}
+@mixin title700 {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+@mixin title600 {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+@mixin text {
+  font-weight: 400;
+}
+
+@mixin sm-h1 {
+  @include space-mono;
+  @include title700;
+  font-size: 67px;
+  line-height: 110%;
+}
+@mixin sm-67 {
+  @include sm-h1;
+}
+@mixin sm-h2 {
+  @include space-mono;
+  @include title700;
+  font-size: 51px;
+  line-height: 110%;
+}
+@mixin sm-51 {
+  @include sm-h2;
+}
+@mixin sm-h3 {
+  @include space-mono;
+  @include title700;
+  font-size: 38px;
+  line-height: 120%;
+}
+@mixin sm-38 {
+  @include sm-h3;
+}
+@mixin sm-h4 {
+  @include space-mono;
+  @include title700;
+  font-size: 28px;
+  line-height: 140%;
+}
+@mixin sm-28 {
+  @include sm-h4;
+}
+@mixin sm-h5 {
+  @include space-mono;
+  @include title700;
+  font-size: 22px;
+  line-height: 160%;
+}
+@mixin sm-22 {
+  @include sm-h5;
+}
+@mixin sm-text {
+  @include space-mono;
+  @include text;
+  font-size: 16px;
+  line-height: 140%;
+}
+@mixin sm-16 {
+  @include sm-text;
+}
+@mixin sm-caption {
+  @include space-mono;
+  @include title700;
+  font-size: 12px;
+  line-height: 110%;
+}
+@mixin sm-12 {
+  @include sm-caption;
+}
+
+@mixin ws-h1 {
+  @include work-sans;
+  @include title600;
+  font-size: 67px;
+  line-height: 110%;
+}
+@mixin ws-67 {
+  @include ws-h1;
+}
+@mixin ws-h2 {
+  @include work-sans;
+  @include title600;
+  font-size: 51px;
+  line-height: 110%;
+}
+@mixin ws-51 {
+  @include ws-h2;
+}
+@mixin ws-h3 {
+  @include work-sans;
+  @include title600;
+  font-size: 38px;
+  line-height: 120%;
+}
+@mixin ws-38 {
+  @include ws-h3;
+}
+@mixin ws-h4 {
+  @include work-sans;
+  @include title600;
+  font-size: 28px;
+  line-height: 140%;
+}
+@mixin ws-28 {
+  @include ws-h4;
+}
+@mixin ws-h5 {
+  @include work-sans;
+  @include title600;
+  font-size: 22px;
+  line-height: 140%;
+}
+@mixin ws-22 {
+  @include ws-h5;
+}
+@mixin ws-text {
+  @include work-sans;
+  @include text;
+  font-size: 16px;
+  line-height: 140%;
+}
+@mixin ws-16 {
+  @include ws-text;
+}
+@mixin ws-caption {
+  @include work-sans;
+  @include text;
+  font-size: 12px;
+  line-height: 110%;
+}
+@mixin ws-12 {
+  @include ws-caption;
+}
